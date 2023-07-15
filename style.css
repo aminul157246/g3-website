@@ -68,6 +68,26 @@ font-family: 'Work Sans', sans-serif;
     text-align: center;
     max-width: 862px;
   }
+/* main part  */
+main{
+    max-width: 1140px;
+    margin: 70px auto;
+}
+  /* team part  */
+  .team-container{
+    display: flex;
+    align-items: center;
+  }
+  .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .team-content{
+    padding-right:70px ;
+    padding-left: 50px;
+  }
+
 
   /* responsive media style  */
   /* for mobile  */
@@ -76,7 +96,8 @@ font-family: 'Work Sans', sans-serif;
     header{
         padding: 20px;
     }
-    nav {
+    nav,
+    .team-container {
         
         flex-direction: column;
     }
@@ -84,12 +105,20 @@ font-family: 'Work Sans', sans-serif;
         flex-direction: column;
         gap: 10px;
     }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+    .team-content{
+        padding-right:20px ;
+    padding-left: 20px;
+    }
     
   }
   /* tablet or medium device  */
 
   @media screen and (min-width: 576px) and (max-width: 960px) {
-          nav{
+          nav,
+          .team-container {
             flex-direction: column;
           }
           header{
